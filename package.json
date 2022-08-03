@@ -1,0 +1,35 @@
+{
+  "name": "exclusive-promises",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "François Wouts",
+    "email": "f@zenc.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fwouts/exclusive-promises"
+  },
+  "bugs": {
+    "url": "https://github.com/fwouts/exclusive-promises/issues"
+  },
+  "main": "dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "prepublish": "pnpm build",
+    "build": "unbuild",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4",
+    "unbuild": "^0.7.6",
+    "vitest": "^0.20.3"
+  }
+}
