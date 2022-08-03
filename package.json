@@ -1,6 +1,6 @@
 {
   "name": "exclusive-promises",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": {
     "name": "François Wouts",
@@ -13,13 +13,14 @@
   "bugs": {
     "url": "https://github.com/fwouts/exclusive-promises/issues"
   },
-  "main": "dist/index.cjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs",
-      "default": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
